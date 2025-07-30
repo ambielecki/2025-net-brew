@@ -1,0 +1,29 @@
+﻿services:
+  net-nginx-proxy:
+    container_name: net-nginx-proxy
+    build: ./builds/nginx-proxy
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - /var/run/docker.sock:/tmp/docker.sock:ro
+      - ./certs:/etc/nginx/certs
+  brewapi:
+    container_name: brewapi
+    image: brewapi
+    build:
+      context: .
+      dockerfile: BrewApi/Dockerfile
+    environment:
+      - VIRTUAL_HOST=brew.test
+  brewmariadb:
+    container_name: brewmariadb
+    image: mariadb:11.4.7
+    ports:
+      - "33061:3306"
+    volumes:
+      - ./db-data:/var/lib/mysql
+    working_dir: /var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+    

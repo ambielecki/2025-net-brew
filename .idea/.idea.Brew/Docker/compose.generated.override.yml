@@ -1,0 +1,21 @@
+# This is a generated file. Not intended for manual editing.
+services:
+  brewapi:
+    build:
+      context: "\\\\wsl.localhost\\Ubuntu\\home\\ambielecki\\projects\\Brew"
+      dockerfile: "BrewApi/Dockerfile"
+      target: "base"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net9.0/BrewApi.dll"
+    environment:
+      ASPNETCORE_ENVIRONMENT: "Development"
+      DOTNET_USE_POLLING_FILE_WATCHER: "true"
+    image: "brewapi:dev"
+    ports: []
+    volumes:
+    - "\\\\wsl.localhost\\Ubuntu\\home\\ambielecki\\projects\\Brew\\BrewApi:/app:rw"
+    - "\\\\wsl.localhost\\Ubuntu\\home\\ambielecki\\projects\\Brew:/src:rw"
+    - "C:\\Users\\andrew.bielecki\\.nuget\\packages:/home/app/.nuget/packages"
+    working_dir: "/app"

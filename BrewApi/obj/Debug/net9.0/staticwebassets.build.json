@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "CLw6+UP2fI4v79n/gre5dCPWdV6rdvpYGhmJVRawrI8=",
+  "Source": "BrewApi",
+  "BasePath": "_content/BrewApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

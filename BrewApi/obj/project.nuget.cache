@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "bxYX40us4Ko=",
+  "success": true,
+  "projectFilePath": "\\\\wsl.localhost\\Ubuntu\\home\\ambielecki\\projects\\Brew\\BrewApi\\BrewApi.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\andrew.bielecki\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.6\\microsoft.aspnetcore.openapi.9.0.6.nupkg.sha512",
+    "C:\\Users\\andrew.bielecki\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}
