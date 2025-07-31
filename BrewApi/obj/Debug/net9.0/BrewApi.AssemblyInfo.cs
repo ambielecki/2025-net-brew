@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BrewApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b212ea130e229fd8c590de55ad6b62948330578a")]
 [assembly: System.Reflection.AssemblyProductAttribute("BrewApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BrewApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

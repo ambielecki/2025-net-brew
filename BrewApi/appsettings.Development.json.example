@@ -1,0 +1,12 @@
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "TokenKey": "somekey",
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=server;Port=3306;Database=db;User=user;Password=password"
+  }
+}

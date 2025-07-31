@@ -1,3 +1,7 @@
 /db-data
 /db-data-2
 /certs
+appsettings.Development.json
+bin/
+obj/
+/packages/

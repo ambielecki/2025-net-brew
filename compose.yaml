@@ -8,14 +8,7 @@
     volumes:
       - /var/run/docker.sock:/tmp/docker.sock:ro
       - ./certs:/etc/nginx/certs
-  brewapi:
-    container_name: brewapi
-    image: brewapi
-    build:
-      context: .
-      dockerfile: BrewApi/Dockerfile
-    environment:
-      - VIRTUAL_HOST=brew.test
+  
   brewmariadb:
     container_name: brewmariadb
     image: mariadb:11.4.7
@@ -26,4 +19,15 @@
     working_dir: /var/lib/mysql
     environment:
       - MYSQL_ROOT_PASSWORD=root
+  
+  brewapi2:
+    container_name: brewapi2
+    image: brewapi
+    build:
+      context: .
+      dockerfile: BrewApi/Dockerfile
+    environment:
+      - VIRTUAL_HOST=brew.test
+    links:
+      - brewmariadb
     

@@ -1,6 +1,6 @@
 # This is a generated file. Not intended for manual editing.
 services:
-  brewapi:
+  brewapi2:
     build:
       context: "\\\\wsl.localhost\\Ubuntu\\home\\ambielecki\\projects\\Brew"
       dockerfile: "BrewApi/Dockerfile"
